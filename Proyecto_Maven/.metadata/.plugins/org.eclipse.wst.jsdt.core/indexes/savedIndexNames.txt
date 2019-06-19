@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\RENGI\OneDrive\Desktop\TebFlix\Proyecto_Maven\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1768612142.index
+4238944588.index
+2475343326.index
+2523026397.index
+4092670702.index
+36984681.index
+1223493643.index
