@@ -1,0 +1,36 @@
+document.body.onload = addElement;
+
+function addElement () { 
+for(var i=0;i<4;i++){
+      // crea un nuevo div 
+  // y añade contenido 
+  // var imgst = document.getElementById("div1").innerHTML = ' <p>hola que tal</p>';
+  var newDiv = document.createElement("div"); 
+  var newContent = document.createTextNode(""); 
+  newDiv.appendChild(newContent); //añade texto al div creado. 
+  newDiv.classList.add('comic');
+  var currentDiv = document.getElementById("div1"); 
+  currentDiv.appendChild(newDiv);
+  
+}
+addElement2();
+
+
+}
+function addElement2(){
+
+
+var currentC = document.getElementsByClassName("mec");
+for(var k=0;k < currentC.length;k++){
+  
+  for(var i=0;i<3;i++){
+    var newp = document.createElement("p");
+    var newC = document.createTextNode("hola");
+    newp.appendChild(newC);
+    currentC[k].appendChild(newp);
+  }
+  }
+
+
+
+}

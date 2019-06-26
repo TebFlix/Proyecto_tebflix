@@ -1,0 +1,28 @@
+function llamadaAjax() {   
+	//un bojeto XMLHttppRequest sera el encargado de recoger la llamada y dar la respuesta
+    var xhr = new XMLHttpRequest();
+
+    // ESto es una funcion conducida por  eventos que  recoge el estado  y me va informando
+    //una llamada ajax es una llamada al servidor como es asyncrona se realiza la cargaq independientemenmte 
+    //de que tarde unos minutos el servidor y por ello debemos saber cuando termina de cargar.
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4) {
+            if (xhr.status == 200)
+            	document.getElementById("resultado").innerHTML = xhr.responseText;// Aqui me devuelve la respuesta pintada en la pantalla del usuario
+            else
+            	document.getElementById("resultado").innerHTML = "Error AJAX";
+        }
+    }
+//aqui esta formando la URL, Para qeu funcione el Servlet.
+    var url = "Triangulo";
+    var l1 = document.getElementById("lado1").value;
+    var l2 = document.getElementById("lado2").value;
+    var l3 = document.getElementById("lado3").value;
+    var parametros = "?lado1=" + l1 + "&lado2=" + l2 + "&lado3=" + l3;
+    url = url + parametros;
+    
+    // Peticion ajax  el  metodo open es como vamos a realizar la peticion    y send lo configura.
+    xhr.open("GET", url);
+    xhr.send();
+    alert("Paso 1: Acabamos de realizar  la solitud")
+}

@@ -1,0 +1,444 @@
+* {
+    font-family: 'PT Sans';
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Cabecera*/
+
+#titulo {
+    position: relative;
+    background-color: #6F0B0B;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo a {
+    text-decoration: none;
+}
+
+.titulos {
+    text-align: center;
+    color: white;
+    font-family: 'Gugi', serif;
+}
+
+h1 {
+    font-size: 40pt;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    position: relative;
+    top: 0px;
+    font-size: 11pt;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'PT Sans';
+}
+
+#inisesion {
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    border-radius: 3px;
+    font-size: 10pt;
+    width: 110px;
+    position: absolute;
+    top: 60%;
+    left: 80.25%;
+}
+
+#inisesion:hover {
+    cursor: pointer;
+    color: #4d0000;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+
+/*Redes*/
+
+#redes {
+    position: absolute;
+    display: inline;
+    top: 20%;
+    left: 80%;
+}
+
+#redes a {
+    padding: 3%;
+    text-decoration: none;
+}
+
+#redes img {
+    width: 27px;
+    height: 27px;
+    border: 0px;
+}
+
+
+/*Menú y sus diferentes etiquetas*/
+
+.nav {
+    width: 100%;
+    height: 100%;
+    padding: 8px 0px 8px 0px;
+    margin: 0 auto;
+    background-color: #821414;
+    text-align: center;
+    list-style: none;
+}
+
+.nav>li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 1px 34px 1px 34px;
+    border-right: 1px solid white;
+}
+
+#final {
+    border-right: none;
+}
+
+.nav li a {
+    font-family: 'Abel', sans-serif;
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav li a:hover {
+    text-shadow: 2px 2px black;
+    color: #f2f2f2;
+    transition-duration: 0.3s;
+}
+
+
+/* Menú desplegable */
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    list-style: none;
+    background-color: #6F0B0B;
+    padding: 5px 10px 5px 10px;
+    text-align: left;
+    border-top: 2px solid white;
+    transition-duration: 0.6s;
+}
+
+.nav li:hover>ul {
+    display: block;
+    transition-duration: 0.6s;
+}
+
+.nav li ul li {
+    position: relative;
+    border-top: 1px solid white;
+    padding: 2px 0px 2px 0px;
+    background-color: #6F0B0B;
+}
+
+#subini {
+    border-top: none;
+}
+
+
+/*Contenido pdf*/
+
+.lista {
+    display: none;
+}
+
+.novedades {
+    display: flex;
+}
+
+/* .nav1>ul>li ul {
+    position: absolute;
+    top: 1.2pc;
+} */
+
+/* .nav1>ul>li ul li {
+    display: none;
+} */
+
+
+/* .nav1>ul>li {
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0 0;
+    background-color: rgb(253, 100, 100);
+    width: 8pc;
+    justify-content: center;
+    position: relative;
+} */
+
+
+
+#img {
+    padding: 10px;
+    padding-left: 10px;
+    height: 400px;
+    width: 300px;
+}
+
+.categoria {
+    transform: rotate(10deg) skew(170deg,170deg);
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0 0;
+    background-color: rgb(253, 100, 100);
+    width: 8pc;
+    justify-content: center;
+    position: relative;
+    padding: 5px 2px;
+    transition: transform ease-in 100ms;
+}
+/*al pasar el cursor por las opciones hace el efecto de pulsar*/
+.categoria:hover {
+    background: rgb(231, 42, 42);
+    transform: translate(-1%,-5%) rotate(10deg) skew(170deg,170deg);
+}
+
+#contenidol {
+    background-color: black;
+    color: white;
+    padding: 2pc 0;
+    height: 50pc;
+}
+
+#contenidol>section {
+    height: 100%;
+}
+
+#contenidol>section>span {
+    font-size: 2pc;
+    display: flex;
+    justify-content: center;
+}
+
+#margen {
+    padding: 1pc 0;
+    margin: 0 1pc;
+    width: 100%;
+}
+
+#imgD {
+    width: 90%;
+}
+
+.img2 {
+
+    cursor: pointer;
+}
+
+#pdfs2 {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.lista {
+    width: 50pc;
+    height: 400px;
+    flex-direction: row;
+}
+
+.lista .comic {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 30%;
+}
+
+.lista .comic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*fin pdf*/
+
+#contenido h3 {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#contenido p {
+    padding: 0px 50px 0px 50px;
+    font-size: 15pt;
+    text-align: center;
+}
+
+#contenido #p2 {
+    font-size: 20pt;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* Botón de suscripción */
+
+#intro a {
+    text-decoration: none;
+}
+
+#suscrip {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 28pt;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 15px 8px 15px;
+}
+
+#suscrip:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #ff0000;
+    transition-duration: 0.5s;
+}
+
+
+/* Formulario suscripción */
+
+#suscripcion {
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20pt;
+    font-family: 'Source Code Pro';
+}
+
+#suscripcion p {
+    font-size: 15pt;
+}
+
+#suscripcion fieldset {
+    width: 70%;
+    background-color: #1a1a1a;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#principal {
+    font-family: 'Abel', sans-serif;
+    display: block;
+    font-size: 19pt;
+}
+
+#suscripcion fieldset div {
+    display: block;
+    padding-left: 25%;
+    padding-right: 20%;
+    text-align: left;
+}
+
+#suscripcion fieldset div label {
+    font-family: 'Abel', sans-serif;
+    font-size: 14pt;
+    position: relative;
+    text-align: left;
+    width: 400px;
+}
+
+#suscripcion input {
+    margin: 10px 20%;
+    width: 300px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 2px;
+}
+
+#botoncrear {
+    text-align: center;
+    font-size: 14pt;
+}
+
+#botoncrear:hover {
+    transition-duration: 0.3s;
+    background-color: #262626;
+    border-color: #262626;
+}
+
+
+/*Footer*/
+
+footer {
+    height: 130px;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-top: 4px solid #333333;
+}
+
+footer div {
+    position: relative;
+    margin-top: 20px;
+    left: 80%;
+    width: 180px;
+}
+
+footer div a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer div img {
+    width: 27px;
+    height: 27px;
+    border: 0px;
+}
+
+#copy {
+    bottom: 23%;
+    position: relative;
+    color: #737373;
+    left: 2%;
+    width: 190px;
+    font-size: 11pt;
+    margin: 0;
+}
+
+footer ul {
+    position: relative;
+    bottom: 33%;
+    left: 0%;
+    margin: 0;
+    width: 200px;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.enl {
+    text-decoration: none;
+    color: #737373;
+}
+
